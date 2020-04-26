@@ -1,4 +1,4 @@
-# reusable-component-library
+# vue-projects
 
 ## Project setup
 ```

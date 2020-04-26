@@ -8,7 +8,7 @@
 
 <script>
 import Home from '$b/components/home.vue'
-import ApplyDrawer from '$project/components/apply-drawer';
+import ApplyDrawer from '$projects/components/apply-drawer';
 
 export default {
   name: 'home',

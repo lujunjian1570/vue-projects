@@ -9,7 +9,7 @@
 <script>
 // @ is an alias to /src
 import Home from '$a/components/home.vue'
-import ApplyDrawer from '$project/components/apply-drawer';
+import ApplyDrawer from '$projects/components/apply-drawer';
 
 export default {
   name: 'home',

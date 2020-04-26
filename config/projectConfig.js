@@ -39,7 +39,7 @@ const config = {
         config.entry.app = ['babel-polyfill', '../src/projects/projectA/main.js']
         config.resolve.alias
           .set('$a', resolve('../src/projects/projectA'))
-          .set('$project', resolve('../src/common'))
+          .set('$projects', resolve('../src/common'))
       },
       configureWebpack: (config) => {
             //开启gzip压缩,需要配置Nginx服务器gzip选项开启
@@ -88,7 +88,7 @@ const config = {
         config.entry.app = ['babel-polyfill', '../src/projects/projectB/main.js']
         config.resolve.alias
           .set('$b', resolve('../src/projects/projectB'))
-          .set('$project', resolve('../src/common'))
+          .set('$projects', resolve('../src/common'))
       },
       configureWebpack: (config) => {
         //开启gzip压缩,需要配置Nginx服务器gzip选项开启
@@ -136,7 +136,7 @@ const config = {
       config.entry.app = ['babel-polyfill', '../src/projects/projectC/main.js']
       config.resolve.alias
           .set('@', resolve('../src/projects/projectC'))
-          .set('$project', resolve('../src/common'))
+          .set('$projects', resolve('../src/common'))
       config.module
           .rule('svg')
           .exclude.add(resolve('../src/projects/projectC/icons'))

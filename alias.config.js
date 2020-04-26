@@ -8,7 +8,7 @@ const resolve = dir => require('path').join(__dirname, dir);
 module.exports = {
   resolve: {
     alias: {
-      '$project': resolve('src/common'),
+      '$projects': resolve('src/common'),
       '$a': resolve('src/projects/projectA'),
       '$b': resolve('src/projects/projectB'),
       '@': resolve('src/projects/projectC')

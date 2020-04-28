@@ -4,7 +4,7 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/home'
+import Home from '$cms/views/home'
 
 Vue.use(VueRouter)
 

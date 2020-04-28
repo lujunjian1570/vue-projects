@@ -1,6 +1,10 @@
+/**
+* Created by LuJunJian on 2020/4/28
+* Home
+*/
 <template>
   <div class="home">
-    <h1>
+    <h1 class="h1-msg">
       {{msg}}
     </h1>
     <img alt="Vue logo" src="../../assets/images/logo.png">
@@ -9,7 +13,7 @@
 </template>
 
 <script>
-  import About from '../../components/about'
+  import About from '$cms/components/about'
   export default {
     components: {
       About
@@ -21,3 +25,9 @@
     }
   }
 </script>
+<style lang="scss" scoped>
+  @import '~$cms/styles/variables.scss';
+  .h1-msg{
+    color: $color333;
+  }
+</style>

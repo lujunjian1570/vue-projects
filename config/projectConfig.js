@@ -48,12 +48,12 @@ const config = {
         .set('$common', resolve('../src/common'))
       config.module
         .rule('svg')
-        .exclude.add(resolve('../src/projects/cms/icons'))
+        .exclude.add(resolve('../src/common/icons')).add(resolve('../src/projects/cms/icons'))
         .end()
       config.module
         .rule('icons')
         .test(/\.svg$/)
-        .include.add(resolve('../src/projects/cms/icons'))
+        .include.add(resolve('../src/common/icons')).add(resolve('../src/projects/cms/icons'))
         .end()
         .use('svg-sprite-loader')
         .loader('svg-sprite-loader')
@@ -108,7 +108,7 @@ const config = {
       config.entry.app = ['babel-polyfill', '../src/projects/projectC/main.js']
       config.resolve.alias
         .set('@', resolve('../src/projects/projectC'))
-        .set('$projects', resolve('../src/common'))
+        .set('$common', resolve('../src/common'))
       config.module
         .rule('svg')
         .exclude.add(resolve('../src/projects/projectC/icons'))

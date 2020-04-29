@@ -1,6 +1,6 @@
 <template>
   <div>
-    about组件
+    about组件<br>
     <svg-icon icon-class="user" class-name="svg-color"/>
     <svg-icon icon-class="link" class-name="svg-color"/>
   </div>

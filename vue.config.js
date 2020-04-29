@@ -1,8 +1,9 @@
-const path = require('path');
-const conf = require('./config/projectConfig');
+const path = require('path')
+const conf = require('./config/projectConfig')
+
 module.exports = {
   pages: conf.pages,
-  publicPath: '/',
+  publicPath: './',
   outputDir: conf.outputDir,
   assetsDir: 'static',
   //取消eslint检查
@@ -12,4 +13,4 @@ module.exports = {
   chainWebpack: conf.chainWebpack,
   configureWebpack: conf.configureWebpack,
   css: conf.css
-};
+}

@@ -4,7 +4,6 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '$cms/views/home'
 
 Vue.use(VueRouter)
 
@@ -12,12 +11,17 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: () => import('$cms/views/home'),
+  },
+  {
+    path: '/my-center',
+    name: 'myCenter',
+    component: () => import('$cms/views/myCenter'),
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   routes
 })
 

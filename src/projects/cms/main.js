@@ -8,8 +8,6 @@ import './styles/base.scss'
 import App from './App.vue'
 import router from './router'
 
-//设置title
-document.title = 'cms'
 //公共icons
 import '$common/icons'
 //本项目icons

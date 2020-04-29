@@ -26,7 +26,6 @@
   }
 </script>
 <style lang="scss" scoped>
-  @import '~$cms/styles/variables.scss';
   .h1-msg{
     color: $color333;
   }

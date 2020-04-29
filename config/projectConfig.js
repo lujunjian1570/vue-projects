@@ -18,6 +18,7 @@ const config = {
         entry: 'src/projects/cms/main.js',
         template: 'public/index.html',
         filename: 'index.html',
+        title: 'cms'
       }
     },
     outputDir: 'dist/cms/',
@@ -74,6 +75,14 @@ const config = {
         })
       );
     },
+    css: {
+      loaderOptions: {
+        // 给 sass-loader 传递选项
+        sass: {
+          prependData: `@import "$cms/styles/variables.scss";`
+        }
+      }
+    }
   },
   projectC: {
     pages: {

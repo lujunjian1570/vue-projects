@@ -80,7 +80,7 @@ const config = {
       // 移除 prefetch 插件
       config.plugins.delete('preload');
       config.plugins.delete('prefetch');
-      // config.entry.app = ['babel-polyfill', '../src/projects/cms/main.js']
+      config.entry.app = ['babel-polyfill', '../src/projects/cms/main.js']
       config.resolve.alias
         .set('$cms', resolve('../src/projects/cms'))
         .set('$common', resolve('../src/common'))

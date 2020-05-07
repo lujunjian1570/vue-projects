@@ -10,6 +10,7 @@
     <img alt="Vue logo" src="../../assets/images/logo.png">
     <about></about>
     <router-link to="/my-center">a连接形式跳转到myCenter</router-link><br>
+    <router-link :to="{path:'/my-center',query:{userId:'kjsadj'}}">a连接形式跳转到myCenter（带参数）</router-link><br>
     <el-button @click="goToMyCenter">方法点击跳转到myCenter</el-button>
   </div>
 </template>
@@ -32,7 +33,7 @@
         // this.$router.push('/my-center')
         // 对象
         // this.$router.push({ path: '/my-center' })
-        // 命名的路由
+        // 带参数
         this.$router.push({ path: '/my-center', query: { userId: 'abcdefg' }})
       }
     }

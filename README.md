@@ -7,7 +7,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn dev projectA
+yarn dev cms
 ```
 
 ### Compiles and minifies for production

@@ -12,7 +12,7 @@ yarn dev projectA
 
 ### Compiles and minifies for production
 ```
-yarn build190 projectA
+yarn build190 cms
 ```
 
 ### Customize configuration

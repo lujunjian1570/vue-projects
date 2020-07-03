@@ -1,3 +1,7 @@
+/**
+ * Created by LuJunJian on 2020/6/10
+ *
+ */
 let projectName = process.argv[2]
 console.log(process.argv);
 let fs = require('fs')

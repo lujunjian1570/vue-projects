@@ -1,4 +1,4 @@
-# reusable-component-library
+# vue-projects
 
 ## Project setup
 ```
@@ -7,12 +7,17 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn dev projectA
+yarn dev test
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build190 projectA
+yarn build:prod test
+```
+
+### analyzer
+```
+yarn build --report
 ```
 
 ### Customize configuration

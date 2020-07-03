@@ -209,7 +209,11 @@ export const constantRoutes = [
 ]
 
 const createRouter = () => new Router({
+<<<<<<< HEAD:src/projects/test/router/index.js
   mode: 'history',
+=======
+  // mode: 'history', // require service support
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7:src/projects/projectC/router/index.js
   scrollBehavior(to, from, savedPosition) {
     // keep-alive 返回缓存页面后记录浏览位置
     if (savedPosition && to.meta.keepAlive) {

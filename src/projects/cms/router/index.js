@@ -1,4 +1,5 @@
 /**
+<<<<<<< HEAD
  * Created by LuJunJian on 2020/6/10
  * 路由页面
  */
@@ -52,6 +53,23 @@ const routes = [
     ]
   },
   /*{
+=======
+ * Created by LuJunJian on 2020/4/28
+ * 路由页面
+ */
+import Vue from 'vue'
+// import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: () => import('$cms/views/home'),
+  },
+  {
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
     path: '/my-center',
     name: 'myCenter',
     component: () => import('$cms/views/myCenter'),
@@ -60,15 +78,24 @@ const routes = [
     path: '/404',
     name: '404',
     component: () => import('$cms/views/404'),
+<<<<<<< HEAD
   },*/
 
+=======
+  },
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
 
   //必须放到最后面
   { path: '*', redirect: '/404', hidden: true }
 ]
 
+<<<<<<< HEAD
 const router = new Router({
   mode: 'history',
+=======
+const router = new VueRouter({
+  // mode: 'history',
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
   routes,
   scrollBehavior(to, from, savedPosition) {
     // keep-alive 返回缓存页面后记录浏览位置

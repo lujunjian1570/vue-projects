@@ -10,7 +10,11 @@ module.exports = {
     alias: {
       '$common': resolve('src/common'),
       '$cms': resolve('src/projects/cms'),
+<<<<<<< HEAD
       '@': resolve('src/projects/test')
+=======
+      '@': resolve('src/projects/projectC')
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
     }
   }
 }

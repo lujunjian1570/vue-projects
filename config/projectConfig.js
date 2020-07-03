@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * Created by LuJunJian on 2020/6/10
+=======
+ * Created by LuJunJian on 2020/4/28
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
  * 项目配置文件
  */
 const projectName = require('./project')
@@ -19,6 +23,7 @@ const externals = {
   axios: 'axios',
   'element-ui': 'ELEMENT'
 }
+<<<<<<< HEAD
 const cdn = {
   // 开发环境
   dev: {
@@ -39,6 +44,8 @@ const cdn = {
     ]
   }
 }
+=======
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
 
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -49,10 +56,16 @@ const config = {
     pages: {
       index: {
         entry: 'src/projects/cms/main.js',
+<<<<<<< HEAD
         template: 'public/index_webpack.html',
         filename: 'index.html',
         title: '运营管理系统',
         cdn: isProduction ? cdn.build : cdn.dev
+=======
+        template: 'public/index.html',
+        filename: 'index.html',
+        title: 'cms',
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
       }
     },
     outputDir: 'dist/cms/',
@@ -78,10 +91,16 @@ const config = {
     },
     chainWebpack: (config) => {
       // 移除 prefetch 插件
+<<<<<<< HEAD
       config.plugins.delete('prefetch-index')
       // 移除 preload 插件
       config.plugins.delete('preload-index');
       // config.entry.app = ['babel-polyfill', '../src/projects/cms/main.js']
+=======
+      config.plugins.delete('preload');
+      config.plugins.delete('prefetch');
+      config.entry.app = ['babel-polyfill', '../src/projects/cms/main.js']
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
       config.resolve.alias
         .set('$cms', resolve('../src/projects/cms'))
         .set('$common', resolve('../src/common'))
@@ -113,7 +132,11 @@ const config = {
       config
         // https://webpack.js.org/configuration/devtool/#development
         .when(!isProduction,
+<<<<<<< HEAD
           config => config.devtool('source-map')
+=======
+          config => config.devtool('cheap-source-map')
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
         )
     },
     configureWebpack: (config) => {
@@ -140,7 +163,11 @@ const config = {
       }
     }
   },
+<<<<<<< HEAD
   test: {
+=======
+  projectC: {
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
     pages: {
       index: {
         entry: 'src/projects/test/main.js',
@@ -150,7 +177,11 @@ const config = {
         cdn: isProduction ? cdn.build : cdn.dev
       }
     },
+<<<<<<< HEAD
     outputDir: 'dist/test/',
+=======
+    outputDir: 'dist/projectC/',
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
     devServer: {
       // 设置主机地址
       host: '0.0.0.0',
@@ -173,6 +204,7 @@ const config = {
       }
     },
     chainWebpack: (config) => {
+<<<<<<< HEAD
       // 移除 prefetch 插件
       config.plugins.delete('prefetch-index')
       // 移除 preload 插件
@@ -210,6 +242,27 @@ const config = {
         .when(!isProduction,
           config => config.devtool('source-map')
         )
+=======
+      config.entry.app = ['babel-polyfill', '../src/projects/projectC/main.js']
+      config.resolve.alias
+        .set('@', resolve('../src/projects/projectC'))
+        .set('$common', resolve('../src/common'))
+      config.module
+        .rule('svg')
+        .exclude.add(resolve('../src/projects/projectC/icons'))
+        .end()
+      config.module
+        .rule('icons')
+        .test(/\.svg$/)
+        .include.add(resolve('../src/projects/projectC/icons'))
+        .end()
+        .use('svg-sprite-loader')
+        .loader('svg-sprite-loader')
+        .options({
+          symbolId: 'icon-[name]'
+        })
+        .end()
+>>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
     },
     configureWebpack: (config) => {
       //开启gzip压缩,需要配置Nginx服务器gzip选项开启

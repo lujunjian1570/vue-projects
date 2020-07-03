@@ -25,10 +25,7 @@
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
     "path-to-regexp": "2.4.0",
-<<<<<<< HEAD
     "screenfull": "^5.0.2",
-=======
->>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
     "vue": "^2.6.11",
     "vue-lazyload": "^1.3.3",
     "vue-router": "^3.1.6",
@@ -65,12 +62,8 @@
     "serve-static": "^1.13.2",
     "svg-sprite-loader": "4.1.3",
     "svgo": "1.2.2",
-<<<<<<< HEAD
     "vue-template-compiler": "^2.6.11",
     "webpack-bundle-analyzer": "^3.7.0"
-=======
-    "vue-template-compiler": "^2.6.11"
->>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
   },
   "postcss": {
     "plugins": {

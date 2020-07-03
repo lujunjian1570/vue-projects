@@ -1,9 +1,5 @@
 /**
-<<<<<<< HEAD
 * Created by LuJunJian on 2020/6/10
-=======
-* Created by LuJunJian on 2020/4/28
->>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
 * Home
 */
 <template>
@@ -11,34 +7,22 @@
     <h1 class="h1-msg">
       {{msg}}
     </h1>
-<<<<<<< HEAD
     <img alt="Vue logo" src="../../assets/images/logo.png"><br><br>
     <about></about><br>
     <router-link to="/my-center">a连接形式跳转到myCenter</router-link><br>
     <router-link :to="{path:'/my-center',query:{userId:'kjsadj'}}">a连接形式跳转到myCenter（带参数）</router-link><br>
     <el-button @click="goToMyCenter">方法点击跳转到myCenter</el-button><br><br>
     <el-button @click="changePrice(1)">改变price</el-button>
-=======
-    <img alt="Vue logo" src="../../assets/images/logo.png">
-    <about></about>
-    <router-link to="/my-center">a连接形式跳转到myCenter</router-link><br>
-    <router-link :to="{path:'/my-center',query:{userId:'kjsadj'}}">a连接形式跳转到myCenter（带参数）</router-link><br>
-    <el-button @click="goToMyCenter">方法点击跳转到myCenter</el-button>
->>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
   import { mapGetters } from 'vuex'
-=======
->>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
   import About from '$cms/components/about'
   export default {
     components: {
       About
     },
-<<<<<<< HEAD
     computed: {
       ...mapGetters([
         'price'
@@ -47,11 +31,6 @@
     data() {
       return {
         msg: '欢迎进入cms系統'
-=======
-    data() {
-      return {
-        msg: '欢迎进入cms'
->>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
       }
     },
     methods: {
@@ -63,7 +42,6 @@
         // this.$router.push({ path: '/my-center' })
         // 带参数
         this.$router.push({ path: '/my-center', query: { userId: 'abcdefg' }})
-<<<<<<< HEAD
       },
       //更改价格
       changePrice (data) {
@@ -75,8 +53,6 @@
             duration: 3 * 1000
           })
         })
-=======
->>>>>>> 251d9ddf19c74ceee44695f5a60359a33308bef7
       }
     }
   }
